@@ -186,7 +186,7 @@
           bzip2
         ] ++ lib.optionals config.environment.lsb.enableDesktop [
           # Desktop
-          xdg_utils
+          xdg-utils
           xorg.xrandr
           fontconfig
           cups
