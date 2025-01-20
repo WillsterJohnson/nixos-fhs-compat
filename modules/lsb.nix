@@ -107,7 +107,7 @@
         at-spi2-atk
 
         ## Sound libraries
-        alsaLib
+        alsa-lib
         openal
 
         ## SDL
