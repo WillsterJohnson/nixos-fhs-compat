@@ -201,12 +201,12 @@
       # environment.ld-linux = true;
     }
     (lib.mkIf config.environment.lsb.enableDesktop {
-      hardware.opengl.enable = lib.mkDefault true;
+      hardware.graphics.enable = lib.mkDefault true;
       hardware.pulseaudio.enable = lib.mkDefault true;
     })
     (lib.mkIf (config.environment.lsb.support32Bit
       && config.environment.lsb.enableDesktop) {
-        hardware.opengl.driSupport32Bit = lib.mkDefault true;
+        hardware.graphics.enable32Bit = lib.mkDefault true;
         hardware.pulseaudio.support32Bit = lib.mkDefault true;
       })
   ]);
